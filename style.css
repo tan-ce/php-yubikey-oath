@@ -1,0 +1,176 @@
+/**
+ * style.css
+ * Stylesheet for the application
+ *
+ * @author Tan Chee Eng
+ * @version 1.0
+ * @copyright Copyright &copy; 2013 Tan Chee Eng
+ * @link http://blog.tan-ce.com/
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program; if not, write to the Free Software
+ * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ *
+ */
+
+html {
+    font-family: sans-serif, 'Roboto';
+    font-size: 20px;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #000;
+    color: #eee;
+}
+#topmost {
+    width: 100%;
+    max-width: 40em;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#202020'); /* for IE */
+    background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#222)); /* for webkit browsers */
+    background: -moz-linear-gradient(top,  #000,  #222); /* for firefox 3.6+ */
+    color: #eee;
+    position: relative;
+}
+h1 {
+    border-bottom: 0.1em solid #33b5e5;
+    font-size: 1.2em;
+    margin: 0 0 0.1em 0;
+    padding: 0.5em;
+}
+a.menu {
+    display: block;
+    float: right;
+    width: 2em;
+    height: 2em;
+    background-size: 1.7em 1.7em;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -0.4em;
+    /* With thanks to Vezquex (vezquex.com) */
+    background-image: url(img/ic_action_overflow.png);
+}
+#menu {
+    display: none;
+    background-color: #222;
+    width: 50%;
+    max-width: 15em;
+    position: absolute;
+    top: 2.35em;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    -moz-box-shadow: 0 0 2px 0 #000;
+    -webkit-box-shadow: 0 0 2px 0 #000;
+    box-shadow: 0 0 2px 0 #000; 
+    z-index: 10;
+}
+#menu > .entry {
+    color: #eee ! important;
+    display: block;
+    padding: 0.7em 0.5em;
+    margin: 0;
+    border-bottom: 0.05em solid #444;
+    text-decoration: none;
+}
+#menu > .entry:last-child {
+    border: none;
+}
+a.back {
+    display: block;
+    float: left;
+    width: 1.2em;
+    height: 2em;
+    background-size: 0.5em 0.8em;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: -0.4em 0 0 -0.5em;
+    /* With thanks to Vezquex (vezquex.com) */
+    background-image: url(img/ic_up.png);
+}
+#preamble {
+    padding: 0.25em;
+    margin: 0;
+}
+#login {
+    display: none;
+}
+form {
+    padding: 0.5em;
+}
+#topmost > .entry {
+    padding: 0.5em;
+    margin: 0;
+    border-bottom: 0.05em solid #444;
+}
+.entry-name {
+    color: #777;
+}
+.entry-code {
+    font-size: 2em;
+}
+
+form { position: relative }
+
+span.holo:before, span.holo:after {
+    border: 1px solid #33b5e5;
+    border-width: 0 1px 0 0;
+    content: "";
+    height: 7px;
+    width: 0;
+    display: inline-block;
+    vertical-align: bottom;
+}
+span.holo > input[type='text'],
+span.holo > input[type='password'] {
+    font-size: 1em;
+    color: #eee;
+    width: 90%;
+    border: 1px solid #33b5e5;
+    border-width: 0 0 1px;
+    padding: 0.6em 0.4em 0.1em 0.4em;
+    margin: 0;
+    background: none;
+    vertical-align: bottom;
+    outline: none;
+}
+
+div.holo-radio {
+    width: 100%;
+    padding: 0;
+    border-bottom: 0.05em solid #444;
+}
+div.holo-radio:last-child { border-bottom: none }
+
+div.holo-radio > input {
+    display: none;
+}
+div.holo-radio label { 
+    display: block;
+    cursor: pointer;
+    padding: 0.5em;
+}
+div.holo-radio label:before {
+    float: right;
+    content: "";
+    height: 1em;
+    width: 1em;
+    border: 2px solid #444;
+    border-radius: 1em;
+}
+div.holo-radio :checked + label:before {
+    background-color: #33b5e5;
+}
