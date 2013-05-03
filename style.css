@@ -174,3 +174,17 @@ div.holo-radio label:before {
 div.holo-radio :checked + label:before {
     background-color: #33b5e5;
 }
+
+input.button {
+    font-size: 1em;
+    background: #222;
+    color: #eee ! important;
+    display: block;
+    padding: 0.7em 0.5em;
+    margin-top: 0.7em;
+    border: none;
+    border-bottom: 0.05em solid #444;
+    -moz-box-shadow: 0 0 2px 0 #000;
+    -webkit-box-shadow: 0 0 2px 0 #000;
+    box-shadow: 0 0 2px 0 #000; 
+}
